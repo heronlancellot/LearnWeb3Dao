@@ -1,3 +1,4 @@
+![dApp-img](https://user-images.githubusercontent.com/57544272/200377601-aa1a15fd-f918-4044-b563-f69a41eb5fa7.png)
 Create An Ethereum Dapp with Ethers.js
 Dapp reads and writes a value to the blockchain 
 # Using Hardhat & QUICKNODE 
@@ -61,6 +62,5 @@ Dapp reads and writes a value to the blockchain
         - Network: Goerli Testnet [Take a faucet for GAS]
     - Get value in the Blockchain
         - Open a console (Ctrl + Shift + i) in the browser to see
-![dApp-img](https://user-images.githubusercontent.com/57544272/200377601-aa1a15fd-f918-4044-b563-f69a41eb5fa7.png)
 
  
