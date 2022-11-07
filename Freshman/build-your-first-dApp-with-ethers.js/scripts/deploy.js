@@ -1,17 +1,23 @@
-const hre = require("hardhat");
+const { ethers } = require("hardhat");
 
 async function main() {
-  /*
-  const lockedAmount = hre.ethers.utils.parseEther("1");
+  
+  const [deployer] = await ethers.getSigners();
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
+  console.log("Deploying contracts with the account:", deployer.address);
 
-  await lock.deployed();
-  */
+  console.log("Account balance:", (await deployer.getBalance()).toString());
+
+  const Mood = await ethers.getContractFactory("MoodDiary");
+  const moodDeployed = await Mood.deploy();
+  await moodDeployed.deployed();
+
+  console.log("Token address:", moodDeployed.address);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });

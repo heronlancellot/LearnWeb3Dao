@@ -1,5 +1,6 @@
 Create An Ethereum Dapp with Ethers.js
-Dapp reads and writes a value to the blockchain with HARDHAT
+Dapp reads and writes a value to the blockchain 
+# Using Hardhat & QUICKNODE 
 
 - Create a basic HTML web page
 - Create a basic Solidity smart contract
@@ -33,7 +34,32 @@ Dapp reads and writes a value to the blockchain with HARDHAT
     npm install --save-dev "hardhat@^2.12.2" "@nomicfoundation/hardhat-toolbox@^2.0.0"
     ```
 
+- Install Dotenv
+    ```
+    npm install dotenv --save
+    ```
+    - Environment variables
+
 - Deploy on Goerli Testnet    
     ```
     npx hardhat run scripts/deploy.js --network goerli
     ```
+
+- Contract address:
+    ```
+    0x67ec9ecCe141315Bc7927Ab604f3910A8C437bbb
+    https://goerli.etherscan.io/address/0x67ec9ecCe141315Bc7927Ab604f3910A8C437bbb#code
+
+    ```
+
+- How to use?
+    - Clone this repository and use 
+        ``` 
+        npm run dev
+        ```
+    - Set value in the blockchain 
+        - Network: Goerli Testnet [Take a faucet for GAS]
+    - Get value in the Blockchain
+        - Open a console (Ctrl + Shift + i) in the browser to see
+
+ 
