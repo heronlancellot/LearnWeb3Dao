@@ -3,11 +3,11 @@ const { ethers } = require("hardhat");
 async function main() {
 
   const Lw3 = await ethers.getContractFactory("LW3Token");
-  const lw3deployed = await Lw3.deploy();
-  await lw3deployed.deployed("LearnWeb3DAO", "LW3");
+  const lw3Deployed = await Lw3.deploy();
+  await lw3Deployed.deployed("LearnWeb3Token", "LW3");
 
   console.log(
-    `Deployed to ${lw3deployed.address}`
+    `Deployed to ${lw3Deployed.address}`
   );
 }
 
