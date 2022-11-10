@@ -1,13 +1,37 @@
-# Sample Hardhat Project
+Build your own NFT using ERC-721
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# Using Hardhat & QUICKNODE 
 
-Try running some of the following tasks:
+- Create a basic Token ERC-721
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+## Hardhat
+- Install Hardhat:
+    ```
+    npm install --save-dev hardhat
+    ````
+
+- Initialize Hardhat
+    ```
+    npx hardhat
+    ```
+- Install Dependencies Hardhat
+    ```
+    npm install --save-dev "hardhat@^2.12.2" "@nomicfoundation/hardhat-toolbox@^2.0.0"
+    ```
+
+- Install Dotenv
+    ```
+    npm install dotenv --save
+    ```
+    - Environment variables
+
+- Deploy on Goerli Testnet    
+    ```
+    npx hardhat run scripts/deploy.js --network goerli <other args>,
+    ```
+- Verify contract 
+    ```
+    hardhat verify --contract contracts/Example.sol:ExampleContract <other args>
+
+    ```
+[LW3Token | Etherscan](https://goerli.etherscan.io/address/0x0755b47E70C7fcd556176D4d3882E2951773075e#code)

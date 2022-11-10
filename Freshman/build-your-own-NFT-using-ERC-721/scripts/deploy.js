@@ -3,7 +3,7 @@ const { ethers } = require("hardhat");
 async function main() {
 
   const GameItemNft = await hre.ethers.getContractFactory("GameItemNft");
-  const GameItemNftDeployed = await GameItemNft.deploy("GameItemNft", "GIN");
+  const GameItemNftDeployed = await GameItemNft.deploy();
 
   await GameItemNftDeployed.deployed();
 
