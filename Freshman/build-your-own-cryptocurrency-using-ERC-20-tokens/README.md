@@ -35,3 +35,4 @@ Build your own cryptocurrency using ERC-20 tokens
 
     ```
     [LW3Token | Etherscan](https://goerli.etherscan.io/address/0xA8f76032E255112D99f1e4AB0Af6D55Ba7e91E23#code)
+    ![image](https://user-images.githubusercontent.com/57544272/201109453-7783233a-a060-4810-a6f7-1e9aee881800.png)
