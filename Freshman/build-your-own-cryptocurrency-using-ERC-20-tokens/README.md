@@ -27,5 +27,11 @@ Build your own cryptocurrency using ERC-20 tokens
 
 - Deploy on Goerli Testnet    
     ```
-    npx hardhat run scripts/deploy.js --network goerli
+    npx hardhat run scripts/deploy.js --network goerli <other args>,
     ```
+- Verify contract 
+    ```
+        hardhat verify --contract contracts/Example.sol:ExampleContract <other args>
+
+    ```
+    [LW3Token | Etherscan](https://goerli.etherscan.io/address/0xA8f76032E255112D99f1e4AB0Af6D55Ba7e91E23#code)
