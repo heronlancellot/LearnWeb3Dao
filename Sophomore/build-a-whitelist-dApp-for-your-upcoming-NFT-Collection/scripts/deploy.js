@@ -1,19 +1,18 @@
-const hre = require("hardhat");
+const {ethers} = require("hardhat");
 
 async function main() {
 
-  const lockedAmount = hre.ethers.utils.parseEther("1");
+  const WhitelistContract = await hre.ethers.getContractFactory("Whitelist");
+  const DeployedWhitelistContract = await WhitelistContract.deploy(10);
+  await DeployedWhitelistContract.deployed();
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy();
-  await lock.deployed();
+  console.log("Whitelist Contract Address:", DeployedWhitelistContract.address);
 
-  console.log(
-    `Lock with 1 ETH deployed to ${lock.address}`
-  );
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
