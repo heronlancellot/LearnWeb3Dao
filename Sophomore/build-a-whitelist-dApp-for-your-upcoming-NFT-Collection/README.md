@@ -33,3 +33,9 @@ Build a whitelist dApp for your upcoming NFT Collection
         hardhat verify --contract contracts/Example.sol:ExampleContract <other args>
 
     ```
+- Website
+    ```
+        npx create-next-app@latest
+    ```
+
+
