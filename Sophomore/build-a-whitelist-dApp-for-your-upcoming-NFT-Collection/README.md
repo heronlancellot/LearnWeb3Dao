@@ -1,4 +1,5 @@
 Build a whitelist dApp for your upcoming NFT Collection
+Link to site: https://whitelist-dapp-heronlancellot.vercel.app/
 # Using Hardhat & QUICKNODE & React & NextJs
 
 - Create a whitelist
@@ -39,3 +40,4 @@ Build a whitelist dApp for your upcoming NFT Collection
     ```
 
 
+[Whitelist | Etherscan](https://goerli.etherscan.io/address/0x13Ee7dAE93c5758edf8DBAD8842D308B626f14eE#code)
