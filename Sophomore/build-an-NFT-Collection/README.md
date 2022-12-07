@@ -1,5 +1,6 @@
 # Build a NFT Collection 
 Build a Nft Collection 
+Link to site: https://nft-collection-dapp-heronlancellot.vercel.app/
 
 - Create a whitelist :check
 
