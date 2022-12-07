@@ -43,4 +43,5 @@ Build a Nft Collection
     ```
 
 
-[Whitelist | Etherscan](https://goerli.etherscan.io/address/0xefd23d87b3f43796f96f03e7e5c57d877885b3dd#code)
+[Whitelist | Etherscan - older contract](https://goerli.etherscan.io/address/0xefd23d87b3f43796f96f03e7e5c57d877885b3dd#code)
+[Whitelist | Etherscan - new contract](https://goerli.etherscan.io/address/0x98e211f4c324b8bab6476ad0145d8794cdf22361)
