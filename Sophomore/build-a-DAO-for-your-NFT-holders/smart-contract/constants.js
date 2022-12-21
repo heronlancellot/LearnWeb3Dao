@@ -1,0 +1,4 @@
+const CRYPTODEVS_NFT_CONTRACT_ADDRESS =
+" ";
+
+module.exports = { CRYPTODEVS_NFT_CONTRACT_ADDRESS };

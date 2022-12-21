@@ -123,6 +123,17 @@ contract CryptoDevsDAO is Ownable {
             proposal.nayVotes += numVotes;
         }
     }
+    modifier inactiveProposalOnly(uint256 proposalIndex) {
+        require(
+            proposals[proposalIndex].deadline <= block.timestamp,
+            "DEADLINE_NOT_EXCEEDED"
+        );
+        require(
+            proposals[proposalIndex].executed == false,
+            "PROPOSAL_ALREADY_EXECUTED"
+        );
+        _;
+    }
 
     function executeProposal(uint256 proposalIndex)
     external
