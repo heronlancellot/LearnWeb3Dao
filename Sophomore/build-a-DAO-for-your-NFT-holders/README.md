@@ -40,4 +40,4 @@
     ```
 
 
-[Whitelist | Etherscan]()
+[Whitelist | Etherscan](https://goerli.etherscan.io/tx/0x86bb157c02a1d9a1594e56f0a0c77d8fcd9096d3aa5dd114136ace5c10dfdc9a)
