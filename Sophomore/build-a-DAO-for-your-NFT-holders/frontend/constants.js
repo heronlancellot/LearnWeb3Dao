@@ -1,7 +1,72 @@
-export const CRYPTODEVS_DAO_CONTRACT_ADDRESS = "";
+export const CRYPTODEVS_DAO_CONTRACT_ADDRESS = "0xa4D35F2103DCa8f3DA504f338a847CA6bD957563";
 export const CRYPTODEVS_NFT_CONTRACT_ADDRESS = "0x98e211f4c324B8bAb6476ad0145D8794Cdf22361";
 
-export const CRYPTODEVS_DAO_ABI = [];
+export const CRYPTODEVS_DAO_ABI = [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "available",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "purchase",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokens",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ];
 export const CRYPTODEVS_NFT_ABI = [
     {
       "inputs": [
