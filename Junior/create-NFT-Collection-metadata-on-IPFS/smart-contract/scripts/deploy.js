@@ -1,11 +1,11 @@
-const {ethers} = require("hardhat");
+const { ethers } = require("hardhat");
 require("dotenv").config({path: ".env"});
 
 async function main() {
 
-  const metadataURL = "ipfs://QmNzUjPb73UpBMmDJhjTtYBY1RFwtDqqem6tzEcry3oRSQ";
+  const metadataURL = "https://ipfs.io/ipfs/QmNzUjPb73UpBMmDJhjTtYBY1RFwtDqqem6tzEcry3oRSQ";
 
-  const Lw3PunksContract  = await thers.getContractFactory("LW3Punks");
+  const Lw3PunksContract  = await ethers.getContractFactory("LW3Punk");
 
   const deployedLW3PunksContract  = await Lw3PunksContract.deploy(metadataURL);
 
